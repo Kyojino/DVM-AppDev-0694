@@ -1,0 +1,138 @@
+.header {
+    display: flex;
+    overflow: hidden;
+}
+
+.header__logo {
+    flex: 1;
+    display: flex;
+
+    position: relative;
+    padding: 20px;
+}
+
+.header__logo-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+
+    background-color: rgb(202, 94, 94);
+    z-index: -1;
+}
+
+.header__logo h1 {
+  padding-left: 20px;
+
+  font-weight: 700;
+  font-size: 42px;
+  text-transform: uppercase;
+  font-family: var(--playfair-display);
+  color: #fff;
+  opacity: 0.8;
+}
+
+
+body {
+    background-color: beige;
+}
+
+.selecter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.event-card {
+    background-color: rgb(197, 100, 100);
+    padding-left: 10px;
+    padding-bottom: 10px;
+    width: 400px;
+    border: 5px solid black;
+}
+
+.event-card hr {
+    background-color: black;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    width: 400px;
+    border: nonex;
+}
+
+#eventsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#searchOutput {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.save-btn {
+    background-color: crimson;
+}
+
+/* button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 3px solid black;
+    background-color: beige;
+} */
+
+.tButton {
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 3px solid black;
+    background-color: beige;
+
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--secondary-color);
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 20px;
+
+}
+
+.active {
+    background-color: brown;
+    color:#fff;
+}
+
+/* h1 {
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 60px;
+    flex: 1;
+    display: flex;
+    background-color: rgb(183, 73, 73);
+    overflow: hidden;
+    width: 100%;
+} */
+
+h2 {
+    padding-bottom: 20px;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+h3 {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+#searchInput {
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    background-color: black;
+    height: 5px;
+    border: none;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="assets/image.webp">
+  <link rel="stylesheet" href="style.css">
+  <title>FestApp</title>
+</head>
+
+<script type="module" src="script.js"></script>
+
+<body>
+  <header id="header">
+    <nav class = "header">
+      <div class="header__logo">
+        <h1><bold>FEST-2026</bold></h1>
+        <div class="header__logo-overlay"></div>
+      </div>
+    </nav>
+  </header>
+
+  <br><input type="text" id="searchInput" placeholder="Search events..." /> <br>
+
+  <button class="tButton" data-value="Music">Music</button>
+  <button class="tButton" data-value="Tech">Tech</button>
+  <button class="tButton" data-value="Dance">Dance</button>
+  <button class="tButton" data-value="Challenge">Challenge</button>
+  <button class="tButton" data-value="Sports">Sports</button>
+  <button class="tButton" data-value="Clear">Clear</button>
+
+  <div class="selecter">
+  <select id="sortSelect">
+    <option value=""><b>SORT BY</b></option>
+    <option value="day">Day</option>
+    <option value="registrations">Registrations</option>
+  </select>
+  </div>
+
+  <h2><div id = "outputTitle"></div>
+  <div id="filters"></div>
+  </h2>
+
+  <div id="eventsContainer"></div>
+  <div id="searchOutput"></div>
+
+  <hr>
+
+  <h2>My Lineup</h2>
+  <div id="lineupContainer"></div>
+</body>
+</html>
+
